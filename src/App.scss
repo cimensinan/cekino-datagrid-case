@@ -1,0 +1,185 @@
+@use "./assets/scss/mixins" as m;
+
+.tableCase {
+  @media (min-width: 992px) {
+    margin: 2rem 8rem;
+    transition: all 0.5s;
+  }
+  @media (min-width: 1200px) {
+    margin: 2rem 15rem;
+    transition: all 0.5s;
+  }
+  @media (min-width: 1400px) {
+    margin: 2rem 20rem;
+    transition: all 0.5s;
+  }
+  margin: 2rem 2rem;
+  transition: all 0.5s;
+  .header {
+    .searchBox {
+      @media (max-width: 768px) {
+        width: 100%;
+        transition: all 0.5s;
+      }
+      @media (width: 768px) {
+        width: 100%;
+        transition: all 0.5s;
+      }
+      .input-group {
+        width: 10.5rem;
+        @media (max-width: 768px) {
+          width: 100%;
+          transition: all 0.5s;
+        }
+        @media (width: 768px) {
+          width: 100%;
+          transition: all 0.5s;
+        }
+        .form-control {
+          border: 1px solid lightgray;
+          border-right: none;
+          border-radius: 0.25rem 0 0 0.25rem;
+          background-color: rgb(245, 245, 245);
+          padding: 0.35rem 0.35rem 0.35rem 0.7rem;
+        }
+        .btn {
+          border: 1px solid lightgray;
+          border-left: none;
+          border-radius: 0 0.25rem 0.25rem 0;
+          background-color: rgb(245, 245, 245);
+          padding: 0.35rem 0.7rem 0.35rem 0.35rem;
+        }
+      }
+    }
+    .btns-group {
+      @media (max-width: 768px) {
+        width: 100%;
+        transition: all 0.5s;
+      }
+      @media (max-width: 576px) {
+        @include m.flexbox(column, center, stretch, 1rem);
+        transition: all 0.5s;
+      }
+      span {
+        border: 1px solid lightgray;
+        border-radius: 0.25rem;
+        @include m.flexbox(row, center, center, 0);
+        padding: 0.45rem 0.7rem;
+        color: gray;
+        background-color: rgb(245, 245, 245);
+      }
+      .btn {
+        @include m.flexbox(row, space-between, center, 0.3rem);
+        font-size: 1.05rem;
+        border-radius: 0.25rem;
+        color: white;
+        font-weight: 500;
+        @media (max-width: 400px) {
+          font-size: 0.85rem;
+          gap: 0.1rem;
+          transition: all 0.5s;
+        }
+        &:first-child {
+          background-color: #2052cc;
+          border-color: #2052cc;
+          svg {
+            font-size: 1.5rem;
+            @media (max-width: 400px) {
+              font-size: 1.2rem;
+              transition: all 0.5s;
+            }
+          }
+        }
+        svg {
+          font-size: 1.2rem;
+          color: white;
+          @media (max-width: 400px) {
+            font-size: 0.85rem;
+            transition: all 0.5s;
+          }
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      @include m.flexbox(column, center, center, 1rem);
+      transition: all 0.5s;
+    }
+  }
+  .table-responsive {
+    .table {
+      thead > tr > th {
+        background-color: rgb(245, 245, 245) !important;
+        font-weight: 500;
+        font-size: 1.1rem;
+      }
+      tr {
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        td {
+          font-size: 1.1rem;
+          &:first-child {
+            padding-left: 1.3rem !important;
+          }
+        }
+      }
+      // tr:nth-child(odd) td{
+      //     background-color: white !important;
+      // }
+      tr:nth-child(odd) td {
+        background-color: #f8ffff !important;
+      }
+    }
+  }
+  .pagination-div {
+    background-color: rgb(245, 245, 245) !important;
+    margin-top: -0.7rem;
+    padding-right: 1rem;
+    ul {
+      margin: 0.5rem 0 0.5rem 0;
+      @include m.flexbox(row, center, center, 1rem);
+      li span,
+      li a {
+        border-radius: 0.25rem !important;
+        background-color: white;
+        @include m.flexbox(row, center, center);
+        color: gray;
+        padding: 0 0.5rem 0.1rem;
+        margin: 0;
+        span {
+          font-size: 1.3rem;
+          @media (max-width: 475px) {
+            font-size: 1rem;
+            transition: all 0.5s;
+          }
+        }
+      }
+      li:first-child span,
+      li:first-child a,
+      li:last-child span,
+      li:last-child a {
+        padding: 0 0.3rem 0.1rem;
+        margin: 0;
+      }
+      li:nth-child(3) a {
+        border: none;
+        background-color: rgb(245, 245, 245) !important;
+        font-size: 1.1rem;
+      }
+      li:nth-child(3) {
+        @media (max-width: 475px) {
+          display: none;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+  .modal-footer {
+    border-top: none;
+    .btn {
+      font-weight: 500;
+      &.btn-primary {
+        background-color: #2052cc !important;
+      }
+    }
+  }
+}
