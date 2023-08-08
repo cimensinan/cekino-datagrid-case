@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cekino-datagrid-case/static/css/main.cc6621c0.css",
+    "main.js": "/cekino-datagrid-case/static/js/main.99889da3.js",
+    "static/js/787.d023035a.chunk.js": "/cekino-datagrid-case/static/js/787.d023035a.chunk.js",
+    "index.html": "/cekino-datagrid-case/index.html",
+    "main.cc6621c0.css.map": "/cekino-datagrid-case/static/css/main.cc6621c0.css.map",
+    "main.99889da3.js.map": "/cekino-datagrid-case/static/js/main.99889da3.js.map",
+    "787.d023035a.chunk.js.map": "/cekino-datagrid-case/static/js/787.d023035a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc6621c0.css",
+    "static/js/main.99889da3.js"
+  ]
+}
