@@ -1,4 +1,5 @@
 {
+  "homepage": "https://cimensinan.github.io/cekino-datagrid-case",
   "name": "cekino-datagrid-case",
   "version": "0.1.0",
   "private": true,
@@ -23,7 +24,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
